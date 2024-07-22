@@ -16,6 +16,6 @@ fi
 
 # read the content of the files
 NBR_FILES=$(find "$FILESDIR" -type f | wc -l)
-NBR_LINES=$(find "$FILESDIR" -name "*.txt" | xargs grep -l "$SEARCHSTR" | wc -l) # $(find "$FILESDIR" -type f | grep -r "$SEARCHSTR" | wc -l)
+NBR_LINES=$(find "$FILESDIR" -name "*.txt" | xargs grep -l "$SEARCHSTR" | wc -l) # $(find "$FILESDIR" -type f | grep -Fr "$SEARCHSTR" | wc -l)
 
 echo "The number of files are $NBR_FILES and the number of matching lines are $NBR_LINES"
