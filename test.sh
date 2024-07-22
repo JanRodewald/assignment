@@ -4,7 +4,7 @@
 # steps described in https://github.com/cu-ecen-5013/assignment-autotest/blob/master/README.md#running-tests
 set -e
 cd `dirname $0`
-
+ 
 if [ -f ./assignment-autotest/docker/options ]; then
     # When run using a docker container on a parent repo, support additional options
     # specifying UID/GID of user
